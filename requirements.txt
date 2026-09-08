@@ -4,4 +4,4 @@ matplotlib
 seaborn
 scikit-learn
 imbalanced-learn
-jupyter
+google colab
