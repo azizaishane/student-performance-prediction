@@ -24,24 +24,14 @@ Ce projet met en œuvre un pipeline complet de classification binaire :
 
 ## 📊 Données
 
-Le notebook attend un fichier `student_performance_2000.csv` (à placer dans `data/` ou à la racine, selon votre organisation) contenant notamment les colonnes suivantes :
+Le notebook attend un fichier `student_performance_2000.csv`  contenant notamment les colonnes suivantes :
 - `attendance_percent`
 - `previous_grade`
 - `internet_access` (Yes/No)
 - `extracurricular_activity` (Yes/No)
 - `result` (Pass/Fail) — variable cible
 
-> ⚠️ Le fichier de données n'est pas inclus dans ce dépôt. Ajoutez le vôtre dans `data/` avant d'exécuter le notebook, ou adaptez le chemin dans la première cellule de chargement.
 
-## 🚀 Installation
-
-```bash
-git clone https://github.com/<votre-utilisateur>/<nom-du-repo>.git
-cd <nom-du-repo>
-python -m venv venv
-source venv/bin/activate  # Windows : venv\Scripts\activate
-pip install -r requirements.txt
-```
 
 ## ▶️ Utilisation
 
@@ -72,14 +62,4 @@ Exécutez les cellules dans l'ordre. Le notebook :
 - imbalanced-learn (SMOTE)
 - matplotlib, seaborn
 
-## 📈 Améliorations possibles
 
-- Validation croisée (cross-validation) au lieu d'un simple split train/test
-- Recherche d'hyperparamètres (GridSearchCV / RandomizedSearchCV)
-- Ajout d'autres modèles (XGBoost, LightGBM)
-- Analyse de l'importance des features
-- Suivi d'expérimentation (MLflow, Weights & Biases)
-
-## 📄 Licence
-
-Ce projet est distribué sous licence MIT — voir le fichier [LICENSE](LICENSE).
